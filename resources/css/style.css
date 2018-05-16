@@ -1,0 +1,50 @@
+/* HEADER  */
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+header p {
+  color: MediumAquamarine;
+  display: inline;
+  margin-left: 3px;
+}
+
+/** NAV BAR CONTENT **/
+
+/*** LOGO & NAV  ***/
+.nav {
+  flex-grow: 1;
+}
+
+/*** LOGO  ***/
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+  justify-content: flex-start;
+}
+
+/*** NAV  ***/
+nav {
+  display: flex;
+  margin-right: 3em;
+  justify-content: flex-end;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a {
+  padding: 0 0.5em;
+}

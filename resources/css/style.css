@@ -1,7 +1,14 @@
-/* HEADER  */
-header {
+/* GLOBAL */
+.flex-container {
   display: flex;
-  position: fixed;
+}
+
+.flex-item {
+  flex: 1 1;
+}
+
+/** HEADER  **/
+header {
   width: 100%;
   font-family: Verdana;
   font-size: 14px;
@@ -9,42 +16,98 @@ header {
   border-bottom: 1px solid black;
 }
 
-header p {
+/*** NAV ***/
+nav {
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid black;
+}
+
+/**** logo  ****/
+.logo {
+  align-items: center;
+}
+
+.logo p {
   color: MediumAquamarine;
-  display: inline;
   margin-left: 10px;
 }
 
-/** NAV BAR CONTENT **/
-
-/*** LOGO & NAV  ***/
+/**** nav (right side of logo) ****/
 .nav {
-  flex-grow: 1;
-}
-
-/*** LOGO  ***/
-.logo {
-  display: flex;
-  align-items: center;
-  margin-left: 2em;
-  justify-content: flex-start;
-}
-
-/*** NAV  ***/
-nav {
-  display: flex;
-  margin-right: 3em;
   justify-content: flex-end;
 }
 
-nav ul{
+.nav ul {
+  flex-shrink: 0;
   list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 337.5px;
 }
 
-nav ul li {
+.nav ul li {
   display: inline-block;
 }
 
-nav a {
-  padding: 0 0.5em;
+
+/** Main **/
+main {
+  margin-top: 35px;
+  justify-content: space-around;
+  border: 1px solid red
 }
+
+/*** column large ***/
+.column-lg {
+  width: 630px;
+  border: 1px solid blue;
+  flex-flow: column;
+}
+
+/**** articles ****/
+.lg-article-one {
+  border: 1px solid green;
+}
+
+.lg-article-two{
+  border: 1px solid green;
+}
+
+.lg-article-three {
+  border: 1px solid green;
+}
+
+/***** topic *****/
+.topic {
+  border: 1px solid black;
+}
+
+
+/*** column medium ***/
+.column-md {
+  width: 300px;
+  border: 1px solid orange;
+  flex-flow: column;
+}
+
+/**** articles ****/
+.md-article-one {
+  border: 1px solid green;
+}
+
+.md-article-two {
+  border: 1px solid green;
+}
+
+/*** column small ***/
+.column-sm {
+  width: 240px;
+  border: 1px solid yellow;
+  flex-flow: column;
+}
+
+.sm-article-one {
+  border: 1px solid green;
+}
+
